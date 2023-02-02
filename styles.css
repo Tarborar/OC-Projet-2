@@ -105,6 +105,7 @@ input{
 #filtre{
     display: flex;
     height: 50px;
+    margin-bottom: 38px;
 }
 
 #filtre p{
@@ -129,3 +130,81 @@ input{
     line-height: 20px;
 }
 
+.fa-solid{
+    margin-right: 10px;
+}
+
+.iconFiltre{
+    font-size: 22px; 
+    color: #0065FC;
+}
+
+/*Info*/
+#info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 37px;
+}
+
+#iconI{
+    border: 1px solid #D9D9D9;
+    border-radius: 999em; 
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+}
+
+#iconI span .fa-solid{ /*compense le margin du .fa-solid*/
+    margin-left: 10px;
+}
+
+/*############################--Hébergements à Marseille--############################*/
+/*Chambre*/
+#chambre{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chambreCouleur{
+    background-color: grey;
+    border-radius: 20px;
+}
+
+#hebergement{
+    flex: 2;
+    margin-right: 40px;
+    padding: 42px 40px 42px 40px;
+}
+
+#hebergement h1{
+    margin: 0 0 23px 0;
+}
+
+#rangeHebergement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.chambreHebergements{
+    width: 246px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+#hebergement p{
+    margin-top: 10px;
+}
+
+.tailleChambre{
+    width: 246px;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+/*############################--Les plus populaires--############################*/
+#populaire{
+    flex: 1;
+}

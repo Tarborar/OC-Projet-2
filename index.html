@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/04fd88eee9.js" crossorigin="anonymous"></script>
     <title>Booki</title>
 </head>
 <body>
@@ -36,81 +37,95 @@
 
     <div id="filtre">
         <p class="sousTitre">Filtres</p>
-        <div class="filtres"><span><img src="#" alt=""></span>Économique</div>
-        <div class="filtres"><span><img src="#" alt=""></span>Familial</div>
-        <div class="filtres"><span><img src="#" alt=""></span>Romantique</div>
-        <div class="filtres"><span><img src="#" alt=""></span>Animaux autorisés</div>
+        <div class="filtres">
+            <span class="iconFiltre"><i class="fa-solid fa-money-bill-wave"></i></span>
+            Économique
+        </div>
+
+        <div class="filtres">
+            <span class="iconFiltre"><i class="fa-solid fa-person"></i></span>
+            Familial
+        </div>
+
+        <div class="filtres"><span class="iconFiltre"><i class="fa-solid fa-heart"></i></span>
+            Romantique
+        </div>
+
+        <div class="filtres"><span class="iconFiltre"><i class="fa-solid fa-dog"></i></span>
+            Animaux autorisés
+        </div>
     </div>
 
     <div id="info">
-        <div><img src="#" alt=""></div>
+        <div id="iconI"><span style ="font-size: 10px; color: #0065FC;"><i class="fa-solid fa-info"></i></span></div>
         <span>Plus de 500 logements sont disponibles dans cette ville</span>
     </div>
 
 <!-- ############################--Hébergements à Marseille--############################ -->
-    <section> 
-        <h1>Hébergements à Marseille</h1>
-        <div class="gridHebergements">
-            <div class="chambreHebergements">
-                <img src="#" alt="">
-                <div class="basHebergements">
-                    <h2>Auberge La Canebière</h2>
-                    Nuit à partir de 25€
-                    <div class="etoiles"></div>
+    <section id="chambre">
+        <article id="hebergement" class="chambreCouleur"> 
+            <h1>Hébergements à Marseille</h1>
+            <div id="rangeHebergement">
+                <div class="chambreHebergements">
+                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" class="tailleChambre">
+                    <div class="basHebergements">
+                        <h2>Auberge La Canebière</h2>
+                        Nuit à partir de 25€
+                        <div class="etoiles"></div>
+                    </div>
+                </div>
+                <div class="chambreHebergements">
+                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" class="tailleChambre">
+                    <div class="basHebergements">
+                        <h2>Hôtel du port</h2>
+                        Nuit à partir de 52€
+                        <div class="etoiles"></div>
+                    </div>
+                </div>
+                <div class="chambreHebergements">
+                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" class="tailleChambre">
+                    <div class="basHebergements">
+                        <h2>Hôtel Les mouettes</h2>
+                        Nuit à partir de 76€
+                        <div class="etoiles"></div>
+                    </div>
+                </div>
+                <div class="chambreHebergements">
+                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" class="tailleChambre">
+                    <div class="basHebergements">
+                        <h2>Hôtel de la mer</h2>
+                        Nuit à partir de 46€
+                        <div class="etoiles"></div>
+                    </div>
+                </div>
+                <div class="chambreHebergements">
+                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" class="tailleChambre">
+                    <div class="basHebergements">
+                        <h2>Auberge Le Panier</h2>
+                        Nuit à partir de 23€
+                        <div class="etoiles"></div>
+                    </div>
+                </div>
+                <div class="chambreHebergements">
+                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" class="tailleChambre">
+                    <div class="basHebergements">
+                        <h2>Hôtel Chez Amina</h2>
+                        Nuit à partir de 96€
+                        <div class="etoiles"></div>
+                    </div>
                 </div>
             </div>
-            <div class="chambreHebergements">
-                <img src="#" alt="">
-                <div class="basHebergements">
-                    <h2>Hôtel du port</h2>
-                    Nuit à partir de 52€
-                    <div class="etoiles"></div>
-                </div>
-            </div>
-            <div class="chambreHebergements">
-                <img src="#" alt="">
-                <div class="basHebergements">
-                    <h2>Hôtel Les mouettes</h2>
-                    Nuit à partir de 76€
-                    <div class="etoiles"></div>
-                </div>
-            </div>
-            <div class="chambreHebergements">
-                <img src="#" alt="">
-                <div class="basHebergements">
-                    <h2>Hôtel de la mer</h2>
-                    Nuit à partir de 46€
-                    <div class="etoiles"></div>
-                </div>
-            </div>
-            <div class="chambreHebergements">
-                <img src="#" alt="">
-                <div class="basHebergements">
-                    <h2>Auberge Le Panier</h2>
-                    Nuit à partir de 23€
-                    <div class="etoiles"></div>
-                </div>
-            </div>
-            <div class="chambreHebergements">
-                <img src="#" alt="">
-                <div class="basHebergements">
-                    <h2>Hôtel Chez Amina</h2>
-                    Nuit à partir de 96€
-                    <div class="etoiles"></div>
-                </div>
-            </div>
-        </div>
 
-        <p class="sousTitre">Afficher plus</p>
-    </section>
+            <p class="sousTitre">Afficher plus</p>
+        </article>
 
 <!-- ############################--Les plus populaires--############################ -->
-    <aside>
+    <article id="populaire" class="chambreCouleur">
         <div>
            <h1>Les plus populaires</h1>
            <img src="#" alt="">
         </div>
-        <div class="gridPopulaires">
+        <div id="rangePopulaire"">
             <div class="chambrePopulaires">
                 <img src="#" alt="">
                 <div>
@@ -136,7 +151,9 @@
                 </div>  
             </div>
         </div>
-    </aside>
+    </article>
+</section>
+    
 
 <!-- ############################--Activités à Marseille--############################ -->
     <section>
