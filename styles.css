@@ -83,7 +83,15 @@ header nav ul li a:hover{
     height: 50px;
     width: 50px;
     border-radius: 15px 0px 0px 15px;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fa-location-dot{
+    margin-left: 10px;
 }
 
 input{
@@ -166,14 +174,14 @@ input{
 }
 
 .chambreCouleur{
-    background-color: grey;
+    background-color: #F2F2F2;
     border-radius: 20px;
 }
 
 #hebergement{
     flex: 2;
     margin-right: 40px;
-    padding: 42px 40px 42px 40px;
+    padding: 42px 10px 42px 40px;
 }
 
 #hebergement h1{
@@ -183,7 +191,7 @@ input{
 #rangeHebergement{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    /* justify-content: space-between; */
 }
 
 .chambreHebergements{
@@ -192,19 +200,86 @@ input{
     background-color: white;
     margin-bottom: 30px;
     border-radius: 20px;
+    overflow: hidden;
+    margin-right: 30px;
 }
 
 #hebergement p{
     margin-top: 10px;
 }
 
-.tailleChambre{
+.tailleChambreHebergement{
     width: 246px;
     height: 124px;
     border-radius: 20px 20px 0 0;
+    border: solid 5px white;
+    box-sizing: border-box;
+}
+
+.basHebergements{
+    margin-left: 16px;
+}
+
+.basHebergements h2{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.etoiles{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    height: 12px;
+}
+
+.etoile{
+    margin-right: 2px;
+    color: #0065FC;
+}
+
+.nonEtoile{
+    color: #F2F2F2;
 }
 
 /*############################--Les plus populaires--############################*/
 #populaire{
     flex: 1;
+    padding-top: 42px;
+    padding-left: 37px;
+    padding-right: 40px;
+}
+
+#iconAlignement{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+#titrePopulaire{
+    margin: 0;
+    margin-top: 16px;
+}
+
+
+.tailleChambrePopulaire{
+    width: 137px;
+    height: 144px;
+    border-radius: 20px 0 0 20px;
+    border: solid 5px white;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+#rangePopulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+.chambrePopulaires{
+    display: flex;
+    width: 343px;
+    height: 144px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 33px;
 }
