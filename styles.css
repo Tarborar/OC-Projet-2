@@ -251,13 +251,13 @@ input{
 
 #iconAlignement{
     display: flex;
-    justify-content: space-between;
     margin-bottom: 23px;
+    align-items: center;
 }
 
 #titrePopulaire{
     margin: 0;
-    margin-top: 16px;
+    margin-right: 118px;
 }
 
 
@@ -283,3 +283,45 @@ input{
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 33px;
 }
+
+/* <############################--Activités à Marseille--############################ */
+#activite{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#activite h1{
+    margin: 0;
+    margin-bottom: 19px;
+}
+
+#rangeActivites{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites{
+    width: 302px;
+    height: 445px;
+    position: relative;
+    /* margin-right: 43px; */
+}
+
+.tailleActivite{
+    width: 302px;
+    height: 445px;
+}
+
+.basActivites{
+    height: 56px;
+    width: 302px;
+    background-color: grey;
+    position: absolute;
+    bottom: 0px;
+}
+
+.basActivites h2{
+    margin: 0;
+    margin-left: 19px;
+}
+
