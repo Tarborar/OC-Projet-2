@@ -194,7 +194,7 @@ input{
     /* flex: 2; */
     width: 66%; /* 66 + 3 + 31*/
     margin-right: 40px;
-    padding: 42px 10px 42px 40px;
+    padding: 42px 40px 42px 40px;
 }
 
 #hebergement h1{
@@ -204,13 +204,13 @@ input{
 #rangeHebergement{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    /* justify-content: space-between; */
+    /* gap: 30px; */
+    justify-content: space-between;
 }
 
 .chambreHebergements{
     /* width: 246px; */
-    width: 29%;
+    width: 32%;
     height: 200px;
     background-color: white;
     /* margin-bottom: 30px; */
@@ -230,6 +230,7 @@ input{
     border-radius: 20px 20px 0 0;
     border: solid 5px white;
     box-sizing: border-box;
+    object-fit: cover;
 }
 
 .basHebergements{
@@ -288,6 +289,7 @@ input{
     border: solid 5px white;
     box-sizing: border-box;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 #rangePopulaire{
@@ -333,6 +335,7 @@ input{
     height: 445px;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    object-fit: cover;
 }
 
 .basActivites{
@@ -365,4 +368,8 @@ footer{
 
 .alignementListeFooter{
     margin-bottom: 12px;
+}
+
+@media screen and (max-width: 992px){
+
 }
