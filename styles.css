@@ -4,11 +4,13 @@ body{
    font-family: Raleway;
    width: 1400px;
    margin: auto;
+   padding-left: 50px;
+   padding-right: 50px;
 }
 
 #global{
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
 }
 
 ul {
@@ -182,7 +184,7 @@ input{
 /*Chambre*/
 #chambre{
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 .chambreCouleur{
@@ -192,8 +194,8 @@ input{
 
 #hebergement{
     /* flex: 2; */
-    width: 66%; /* 66 + 3 + 31*/
-    margin-right: 40px;
+    /* width: 880px;  */
+    /* margin-right: 40px; */
     padding: 42px 40px 42px 40px;
 }
 
@@ -202,15 +204,14 @@ input{
 }
 
 #rangeHebergement{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
-    /* gap: 30px; */
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .chambreHebergements{
     /* width: 246px; */
-    width: 32%;
+    width: 28%;
     height: 200px;
     background-color: white;
     /* margin-bottom: 30px; */
@@ -264,23 +265,19 @@ input{
 
 /*############################--Les plus populaires--############################*/
 #populaire{
-    width: 31%;
-    padding-top: 42px;
-    padding-left: 37px;
-    padding-right: 40px;
+    padding: 40px;
 }
 
 #iconAlignement{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 23px;
     align-items: center;
 }
 
 #titrePopulaire{
     margin: 0;
-    margin-right: 118px;
 }
-
 
 .tailleChambrePopulaire{
     width: 137px;
@@ -295,16 +292,22 @@ input{
 #rangePopulaire{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 33px;
 }
 
 .chambrePopulaires{
     display: flex;
-    width: 343px;
-    height: 144px;
+    /* width: 343px;
+    height: 144px; */
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    margin-bottom: 33px;
+    /* margin-bottom: 33px; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.cotePopulaire{
+    padding-right: 22px;
 }
 
 /* <############################--Activités à Marseille--############################ */
