@@ -8,11 +8,6 @@ body{
    padding-right: 50px;
 }
 
-#global{
-    /* margin-left: 50px;
-    margin-right: 50px; */
-}
-
 ul {
     list-style: none;
 }
@@ -107,7 +102,6 @@ header nav ul li a:hover{
 
 input{
     border: 1px solid #F2F2F2;
-    /* height: 49px; */
 }
 
 #rechercher{
@@ -128,12 +122,9 @@ input{
     display: flex;
     height: 50px;
     margin-bottom: 38px;
-}
-
-#filtre p{
-    margin-right: 50px;
-    display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .filtres{
@@ -141,15 +132,14 @@ input{
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     height: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px; */
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
-
-
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
+    white-space: nowrap;
 }
 
 .fa-solid{
@@ -280,7 +270,7 @@ input{
 }
 
 .tailleChambrePopulaire{
-    width: 137px;
+    width: 40%;
     height: 144px;
     border-radius: 20px 0 0 20px;
     border: solid 5px white;
@@ -298,8 +288,8 @@ input{
 
 .chambrePopulaires{
     display: flex;
-    /* width: 343px;
-    height: 144px; */
+    width: 100%;
+    height: 144px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
     /* margin-bottom: 33px; */
@@ -328,7 +318,7 @@ input{
 
 .activites{
     width: 302px;
-    height: 445px;
+    height: 100%;
     position: relative;
     /* margin-right: 43px; */
 }
@@ -374,5 +364,88 @@ footer{
 }
 
 @media screen and (max-width: 992px){
+
+body{
+    width: 992px;
+}
+
+#chambre{
+    flex-direction: column;
+}
+
+#rangePopulaire{
+    display: flex;
+    flex-direction: row;
+}
+
+.chambrePopulaires{
+    display: flex;
+    width: 30.5%;
+    gap: 23px;
+}
+
+.tailleActivite{
+    width: 182px;
+    height: 267px;
+}
+
+.activites{
+    width: 182px;
+}
+
+.basActivites{
+    width: 182px;
+}
+
+}
+
+@media screen and (max-width: 778px){
+
+body{
+    width: 778px;
+}
+
+header{
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+header nav ul li{
+    width: 50%;
+    margin-left: 0px;
+}
+
+header nav ul li a{
+    font-size: 2em;
+}
+
+#logo{
+    width: 16%;
+    height: 100%;
+    margin-bottom: 48px;
+}
+
+#chambre{
+    flex-direction: column-reverse;
+}
+
+#rangePopulaire{
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+.chambrePopulaires{
+    width: 100%;
+}
+
+#rangeHebergement{
+    flex-direction: column;
+}
+
+.chambreHebergements{
+    width: 100%;
+}
 
 }
