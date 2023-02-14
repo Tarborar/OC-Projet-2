@@ -21,42 +21,44 @@
     </header>
 
 <!-- ############################--Haut de page--############################ -->
-    <div id="presentation">
-        <h1 class="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
-    </div>
-
-    <form method="get" action="" id="recherche">
-        <div id="boxIconPosition">
-            <i class="fa-solid fa-location-dot" style="font-size: 18px"></i>
+    <div id="hautPage">
+        <div id="presentation">
+            <h1 class="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
         </div>
-        <input type="search" name="lieu" class="sousTitre" value="Marseille, France" id="texteRecherche">
-        <input type="submit" id="rechercher" class="sousTitre" value="Rechercher"></input>
-    </form>
 
-    <div id="filtre">
-        <p class="sousTitre">Filtres</p>
-        <ul id="rangeFiltre">
-            <li class="filtres">
-                <span class="iconFiltre"><i class="fa-solid fa-money-bill-wave"></i></span>
-                <p>Économique</p>
-            </li>
-            <li class="filtres">
-                <span class="iconFiltre"><i class="fa-solid fa-person"></i></span>
-                <p>Familial</p>
-            </li>
-            <li class="filtres"><span class="iconFiltre"><i class="fa-solid fa-heart"></i></span>
-                <p>Romantique</p>
-            </li>
-            <li class="filtres"><span class="iconFiltre"><i class="fa-solid fa-dog"></i></span>
-                <p>Animaux autorisés</p>
-            </li>
-        </ul>
-    </div>
+        <form method="get" action="" id="recherche">
+            <div id="boxIconPosition">
+                <i class="fa-solid fa-location-dot" style="font-size: 18px"></i>
+            </div>
+            <input type="search" name="lieu" class="sousTitre" value="Marseille, France" id="texteRecherche">
+            <button type="submit" id="rechercher" class="sousTitre"><div id="valeurBouton">Rechercher</div><i class="fa-solid fa-magnifying-glass" style="font-size: 18px; color: white;" id="loupe"></i></button>
+        </form>
 
-    <div id="info">
-        <div id="iconI"><span style ="font-size: 10px; color: #0065FC;"><i class="fa-solid fa-info"></i></span></div>
-        <span>Plus de 500 logements sont disponibles dans cette ville</span>
+        <div id="filtre">
+            <div class="sousTitre">Filtres</div>
+            <ul id="rangeFiltre">
+                <li class="filtres">
+                    <span class="iconFiltre"><i class="fa-solid fa-money-bill-wave"></i></span>
+                    <p>Économique</p>
+                </li>
+                <li class="filtres">
+                    <span class="iconFiltre"><i class="fa-solid fa-person"></i></span>
+                    <p>Familial</p>
+                </li>
+                <li class="filtres"><span class="iconFiltre"><i class="fa-solid fa-heart"></i></span>
+                    <p>Romantique</p>
+                </li>
+                <li class="filtres"><span class="iconFiltre"><i class="fa-solid fa-dog"></i></span>
+                    <p>Animaux autorisés</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="info">
+            <div id="iconI"><span style ="font-size: 10px; color: #0065FC;"><i class="fa-solid fa-info"></i></span></div>
+            <span>Plus de 500 logements sont disponibles dans cette ville</span>
+        </div>
     </div>
 
     <span id="ancrageHebergement" class="ancrage"></span>

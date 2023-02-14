@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800;900&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -105,8 +106,7 @@ header nav ul li a:hover{
     border-radius: 15px 0px 0px 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .fa-location-dot{
@@ -124,6 +124,20 @@ input{
     padding: 14px 16px 14px 16px;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
+    width: 49px;
+}
+
+#boxIconPosition .fa-solid{
+    margin-right: 17.75px;
+    margin-left: 17.75px;
+}
+
+#loupe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    visibility: hidden;
 }
 
 #texteRecherche{
@@ -401,6 +415,7 @@ footer{
     margin-bottom: 12px;
 }
 
+/* <############################--TABLETTE--############################ */
 @media screen and (max-width: 992px){
 
 body{
@@ -437,53 +452,120 @@ body{
 
 }
 
+/* <############################--TELEPHONE--############################ */
 @media screen and (max-width: 778px){
 
 body{
-    width: 778px;
+    max-width: 778px;
+    padding: 0;
 }
 
 header{
     flex-direction: column;
     text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-header nav ul li{
-    width: 50%;
-    margin-left: 0px;
-}
-
-header nav ul li a{
-    font-size: 2em;
+    padding-top: 21px;
 }
 
 #logo{
-    width: 16%;
-    height: 100%;
-    margin-bottom: 48px;
+    
+    height: auto;
+    margin-bottom: 49px;
+}
+
+header nav ul li {
+    margin: 0;
+    width: 50%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+#hautPage{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#valeurBouton{
+    display: none;
+}
+
+#loupe{
+    visibility: visible;
+}
+
+#presentation{
+    margin-bottom: 36px;
+}
+
+#texteRecherche{
+    width: 100%;
+}
+
+#filtre{
+    display: block;
+}
+
+#filtre .sousTitre{
+    margin-bottom: 15px;
+}
+
+#rangeFiltre{
+    flex-wrap: wrap;
+}
+
+.filtres{
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    width: 30%;
+    margin-bottom: 17px;
 }
 
 #chambre{
     flex-direction: column-reverse;
+    gap: 0px;
+}
+
+.chambreCouleur{
+    border-radius: 0;
+}
+
+#populaire{
+    padding: 20px;
 }
 
 #rangePopulaire{
     flex-direction: column;
-    background-color: #F2F2F2;
 }
 
 .chambrePopulaires{
     width: 100%;
+    margin-bottom: 11px;
+}
+
+.tailleChambrePopulaire{
+    height: 144px;
+}
+
+#hebergement{
+    background-color: white;
+    padding: 20px;
 }
 
 #rangeHebergement{
     flex-direction: column;
+    gap: 11px;
+    width: 100%;
 }
 
 .chambreHebergements{
     width: 100%;
+}
+
+footer{
+    flex-direction: column;
 }
 
 }
