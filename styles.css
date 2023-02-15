@@ -69,10 +69,29 @@ header nav ul{
     display: flex;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 67px;
 }
 
-header nav ul li{
-    margin-left: 67px;
+header nav ul li a{
+    position: relative;
+}
+
+header nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: -44px;
+    left: -30px;
+    right: -30px;
+    height: 3px;
+    border-top: solid 3px #0065FC;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+header nav ul li a:hover::before {
+    opacity: 1;
 }
 
 header nav ul li a:hover{
@@ -107,6 +126,12 @@ header nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;  
+    transition: background-color 0.2s ease-in-out;
+}
+
+#boxIconPosition:hover{
+    background-color: #EAEAEA;
+    cursor: pointer;
 }
 
 .fa-location-dot{
@@ -124,7 +149,13 @@ input{
     padding: 14px 16px 14px 16px;
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
-    width: 49px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#rechercher:hover{
+    background-color: hsl(210, 100%, 55%);
+    cursor: pointer;
+    border-color:hsl(210, 100%, 55%);
 }
 
 #boxIconPosition .fa-solid{
@@ -178,6 +209,12 @@ input{
     font-size: 17px;
     line-height: 20px;
     white-space: nowrap;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.filtres:hover{
+    background-color: #DEEBFF;
+    cursor: pointer;
 }
 
 .fa-solid{
@@ -246,9 +283,24 @@ input{
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: relative;
+
+    transition: 400ms;
 }
+
+.chambreHebergements:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* transform: scale(1.0);
+	transform: perspective(400px);
+	transition: transform 400ms;
+
+    cursor: pointer;
+	transform: perspective(400px) rotateY(15deg) scale(1.1); */
 
 #hebergement p{
     margin-top: 10px;
@@ -338,8 +390,16 @@ input{
     width: 100%;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: relative;
+
+    transition: 400ms;
+}
+
+.chambrePopulaires:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .cotePopulaire{
@@ -359,7 +419,7 @@ input{
     margin-bottom: 60px;
 }
 
-#activite h1{
+#activite h2{
     margin: 0;
     margin-bottom: 19px;
 }
@@ -495,6 +555,10 @@ header nav ul{
     visibility: visible;
 }
 
+#rechercher{
+    width: 49px;
+}
+
 #presentation{
     margin-bottom: 36px;
 }
@@ -564,8 +628,32 @@ header nav ul{
     width: 100%;
 }
 
+#hebergement p{
+    display: none;
+}
+
+#activite{
+    padding: 20px;
+}
+
+#rangeActivites{
+    flex-direction: column;
+}
+
+.activites{
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.tailleActivite{
+    height: 190px;
+}
+
 footer{
     flex-direction: column;
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 }
