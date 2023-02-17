@@ -101,7 +101,7 @@ header nav ul li a:hover{
 /* ############################--Haut de page--############################ */
 /*Présentation */
 #presentation h1{
-    margin-bottom: 8;
+    margin-bottom: 8px;
 }
 
 #presentation p{
@@ -432,13 +432,21 @@ input{
 .activites{
     width: 22.5%;
     position: relative;
+    transition: 400ms;
+}
+
+.activites:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    cursor: pointer;
+    transform: scale(1.075);
+    border-radius: 20px;
 }
 
 .tailleActivite{
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     object-fit: cover;
 }
 
@@ -497,6 +505,14 @@ body{
     width: 31.6%;
 }
 
+.chambrePopulaires:hover{
+    transform: scale(1.075);
+}
+
+.chambreHebergements:hover{
+    transform: scale(1.075);
+}
+
 .cotePopulaire{
     padding-right: 0;
     margin-right: 5px;
@@ -508,6 +524,10 @@ body{
 
 .tailleChambrePopulaire{
     height: auto;
+}
+
+.activites:hover{
+    transform: scale(1.075);
 }
 
 }
@@ -609,6 +629,14 @@ header nav ul{
     margin-bottom: 11px;
 }
 
+.chambrePopulaires:hover{
+    transform: scale(1.05);
+}
+
+.chambreHebergements:hover{
+    transform: scale(1.05);
+}
+
 .tailleChambrePopulaire{
     height: 144px;
 }
@@ -643,6 +671,10 @@ header nav ul{
 .activites{
     width: 100%;
     margin-bottom: 24px;
+}
+
+.activites:hover{
+    transform: scale(1.05);
 }
 
 .tailleActivite{
