@@ -5,6 +5,10 @@ html{
     scroll-behavior: smooth;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
    font-family: Raleway;
    max-width: 1400px;
@@ -652,14 +656,13 @@ header nav ul li a::before{
 
 .rangeFiltre{
     column-gap: 14px;
-    justify-content: space-between;
 }
 
 .filtres{
     font-weight: 700;
     font-size: 11px;
     line-height: 13px;
-    width: 42%;
+    width: 48%;
     padding-left: 13px;
     padding-right: 13px;
     white-space: wrap;
