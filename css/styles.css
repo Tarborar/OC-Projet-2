@@ -52,6 +52,12 @@ h3{
     margin: 0;
 }
 
+.titreFiltre{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
 /* ############################--Header--############################ */
 header{
     display: flex;
@@ -179,23 +185,23 @@ input{
 .filtre{
     display: flex;
     margin-bottom: 38px;
-    align-items: center;
+    /* align-items: center; */
     gap: 3%;   
+}
+
+#test{
+    position: relative;
+    top: 14px;
 }
 
 .rangeFiltre{ /* invisible x-scrollbar? opacite réduite coté */
     display: flex;
     padding: 0;
-    gap: 3%;
-    flex-wrap: nowrap;
+    gap: 14px 3%;
+    flex-wrap: wrap;
     width: 100%;
-    overflow-x: scroll;
     margin: 0;
 }
-
-.rangeFiltre::-webkit-scrollbar {
-    display: none;
-  }
 
 .filtres{
     display: flex;
@@ -205,10 +211,6 @@ input{
     padding-left: 20px;
     padding-right: 20px;
     align-items: center;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 20px;
-    white-space: nowrap;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -629,8 +631,19 @@ header nav ul li a::before{
     width: 100%;
 }
 
+.titreFiltre{
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+}
+
 .filtre{
     display: block;
+    align-items: center;
+}
+
+#test{
+    position: static;
 }
 
 .filtre .sousTitre{
@@ -638,17 +651,18 @@ header nav ul li a::before{
 }
 
 .rangeFiltre{
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    overflow: hidden;
+    column-gap: 14px;
+    justify-content: space-between;
 }
 
 .filtres{
     font-weight: 700;
     font-size: 11px;
     line-height: 13px;
-    width: 31%;
+    width: 42%;
+    padding-left: 13px;
+    padding-right: 13px;
+    white-space: wrap;
 }
 
 .chambre{
