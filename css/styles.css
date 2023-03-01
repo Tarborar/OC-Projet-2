@@ -146,6 +146,7 @@ header nav ul li a:hover{
 
 .fa-location-dot{
     margin-left: 10px;
+    font-size: 18px;
 }
 
 input{
@@ -160,6 +161,11 @@ input{
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     transition: background-color 0.2s ease-in-out;
+}
+
+.fa-magnifying-glass{
+    font-size: 18px; 
+    color: white
 }
 
 #rechercher:hover{
@@ -386,6 +392,12 @@ input{
     align-items: center;
 }
 
+.fa-chart-line{
+    color: #0065FC; 
+    font-size: 18px; 
+    margin: 0;
+}
+
 .titrePopulaire{
     margin: 0;
 }
@@ -506,7 +518,7 @@ footer{
 }
 
 /* <############################--TABLETTE--############################ */
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
 
 body{
     max-width: 992px;
@@ -555,7 +567,7 @@ body{
 }
 
 /* <############################--TELEPHONE--############################ */
-@media screen and (max-width: 778px){
+@media screen and (max-width: 767px){
 
 body{
     max-width: 778px;
@@ -656,16 +668,16 @@ header nav ul li a::before{
 
 .rangeFiltre{
     column-gap: 14px;
+    justify-content: space-between;
 }
 
 .filtres{
     font-weight: 700;
     font-size: 11px;
     line-height: 13px;
-    width: 48%;
+    width: 47%;
     padding-left: 13px;
     padding-right: 13px;
-    white-space: wrap;
 }
 
 .chambre{
